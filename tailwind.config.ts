@@ -17,7 +17,7 @@ const colors = {
 	 *
 	 *  Changing here is the easiest. If you need to fine tune specific component colors you may need to modify:
 	 *  - src/styles/colors.scss
-	 *  - specific components styles at their own files
+	 *  - specific ecosystem styles at their own files
 	 */
 	...generateColorShades("primary", "#0077ff"),
 	...generateColorShades("secondary", "#fac900"),
