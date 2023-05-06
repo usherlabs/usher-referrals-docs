@@ -11,7 +11,7 @@ const config = {
 	tagline: "My project will solve this the best way possible.", // INITIAL TODO
 	favicon: "img/favicon.ico", // INITIAL TODO don't forget to change your favicon for this project, if needed
 
-	url: "https://docs.some-project.usher.so", // INITIAL TODO
+	url: "https://docs.usher.so", // INITIAL TODO
 	// Set the /<baseUrl>/ pathname under which your site is served
 	// For GitHub pages deployment, it is often '/<projectName>/'
 	baseUrl: "/",
@@ -19,7 +19,7 @@ const config = {
 	// GitHub pages deployment config.
 	// If you aren't using GitHub pages, you don't need these.
 	organizationName: "usher",
-	projectName: "reponame", // INITIAL TODO Usually your repo name.
+	projectName: "usher", // INITIAL TODO Usually your repo name.
 
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "warn",
@@ -99,14 +99,14 @@ const config = {
 				items: [
 					{
 						type: "docSidebar",
-						sidebarId: "intro",
+						sidebarId: "guide",
 						position: "left",
-						label: "Docs"
+						label: "Guide"
 					},
 					{
 						type: "docSidebar",
-						sidebarId: "dev-guide",
-						label: "Dev Guide",
+						sidebarId: "ecosystem",
+						label: "Ecosystem",
 						position: "left"
 					},
 
