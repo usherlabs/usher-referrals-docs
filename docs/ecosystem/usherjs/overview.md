@@ -1,5 +1,6 @@
 ---
 title: Overview
+sidebar_position: 1
 ---
 
 # Usher.js Overview
@@ -37,6 +38,6 @@ Usher.js is designed to adapt to various use cases, and enables the following ex
 
 Usher.js integration is a straightforward process. Here's a high-level overview of the steps involved:
 
-1. Follow the instructions in the **[Usher.js' repository](https://github.com/usherlabs/usher.js)** to install the package.
+1. Follow the instructions in the [Usher.js' repository](https://github.com/usherlabs/usher.js) to install the package.
 2. Connect your Usher.js tracking script to either a managed Usher Core instance or a self-hosted node, depending on your needs and preferences.
 3. Configure Usher.js according to your specific requirements, such as defining the respective campaign and data relevant to the conversion event
