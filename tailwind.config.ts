@@ -339,7 +339,7 @@ export default {
 function generateColorShades(colorName, baseColor) {
 	const color = chroma(baseColor);
 
-	const bezierSteps = 5;
+	const bezierSteps = 6;
 
 	const colorScaleToBlack = chroma
 		.bezier([baseColor, "#000"])
