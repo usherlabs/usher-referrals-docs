@@ -52,10 +52,10 @@ To start using Usher Core, you will need to complete the following steps:
 
 1. Choose your preferred deployment option (managed or self-hosted).
 2. Review the prerequisites and ensure your organization has the required technologies in place.
-3. Follow the detailed setup guide provided in the in-depth documentation at **[Usher Core’s repository](https://github.com/usherlabs/usher)**.
+3. Follow the detailed setup guide provided in the in-depth documentation at [Usher Core’s repository](https://github.com/usherlabs/usher).
 
 ## Further Exploration and Support
 
-We encourage developers and businesses alike to explore the in-depth Usher Core documentation at the **[Usher Core repository](https://github.com/usherlabs/usher)** to better understand its features, functionalities, and potential applications.
+We encourage developers and businesses alike to explore the in-depth Usher Core documentation at the [Usher Core repository](https://github.com/usherlabs/usher) to better understand its features, functionalities, and potential applications.
 
 Refer to this documentation's [community and resources](https://todolink.com/community-and-resources) section for additional resources and community support. You'll find valuable insights and networking opportunities, helping you maximize your Usher Core experience.
