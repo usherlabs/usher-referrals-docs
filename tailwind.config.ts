@@ -20,7 +20,7 @@ const colors = {
 	 *  - specific ecosystem styles at their own files
 	 */
 	...generateColorShades("primary", "#0077ff"),
-	...generateColorShades("secondary", "#fac900"),
+	...generateColorShades("secondary", "#a461d8"),
 	...generateColorShades("emphasis", "#c24943"),
 
 	...generateColorShades("warning", "#f6c343"),
@@ -75,7 +75,7 @@ export default {
 	corePlugins: {
 		preflight: false
 	},
-	content: ["./src/**/*.{js,jsx,ts,tsx}", "../docs/**/*.mdx"], // my markdown stuff is in ../docs, not /src
+	content: ["./src/**/*.{js,jsx,ts,tsx}", "./docs/**/*.mdx"], // my markdown stuff is in ../docs, not /src
 	darkMode: ["class", '[data-theme="dark"]'], // hooks into docusaurus' dark mode settigns
 
 	plugins: [],
