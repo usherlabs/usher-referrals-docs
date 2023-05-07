@@ -26,7 +26,7 @@ The primary function of Usher Core is to facilitate and oversee partnership camp
 
 These advantages contribute to the success of partnership campaigns, enabling businesses to capitalize on collaboration opportunities and drive growth.
 
-## Customize **Usher Core for your needs**
+## Customize Usher Core for your needs
 
 While Usher provides a managed Usher Core instance at [https://app.usher.so](https://app.usher.so), the technology is open for you to run your own version of the instance.
 

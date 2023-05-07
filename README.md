@@ -1,4 +1,4 @@
-# 📖 **Welcome to Usher Documentation repository**
+# 📖 Welcome to Usher Documentation repository
 
 This is the home of Usher docs! Here, we aim to help our users make the best of it, so they may {what usher will help users achieve}.
 
@@ -23,7 +23,7 @@ $ pnpm start
 
 This command starts a local development server and opens a browser window. Most changes are reflected live without having to restart the server.
 
-# C**ustomization**
+# Customization
 
 ## Creating and organizing content
 
@@ -103,7 +103,7 @@ $ pnpm build
 
 This command generates static content into the **`build`** directory and can be served using any static contents hosting service.
 
-## Documentation d**eployment guidelines**
+## Documentation deployment guidelines
 
 {Insert docs deployment guidelines here; i.e.: how to deploy with vercel}
 
