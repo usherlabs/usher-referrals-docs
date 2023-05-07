@@ -32,6 +32,7 @@ html[data-theme='dark'] {
 
   //differentiate between inline code and code blocks
   code {
+    width: 1px; // hack that makes it not overflow the page
     font-size: 95%;
   }
   pre code {
