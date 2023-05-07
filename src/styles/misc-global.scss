@@ -17,8 +17,8 @@ html[data-theme="light"] {
 	--token-primary-bg-c: theme('colors.white');
 	--token-secondary-bg-c: theme('colors.white');
 
-	--ifm-link-color: theme("colors.primary-dark");
-	--ifm-link-hover-color: theme("colors.primary");
+	--ifm-link-color: theme("colors.primary");
+	--ifm-link-hover-color: theme("colors.primary-light");
 
 	--ifm-background-surface-color: theme("colors.secondary-lightest");
 

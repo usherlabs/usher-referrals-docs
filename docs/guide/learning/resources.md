@@ -10,9 +10,13 @@ Here you'll find a curated list of learning materials to empower you on your jou
 
 Our video guides offers engaging and in-depth visual learning opportunities. These videos cover essential topics related to Usher, helping you to understand the platform's core concepts and features. Here are some highlights:
 
-- **[Introduction to Usher](https://www.loom.com/share/3fd1d1add1124a70abb0c97299a2ed42)**: Get acquainted with Usher, its purpose, and its unique benefits to the world of Web3.
-- **[Starting a Campaign](https://www.loom.com/share/d6e631a5528b488384086f520224732d)**: Learn how to create and launch a campaign on the Usher platform, step by step.
-- **[Personhood Verification](https://www.loom.com/share/5b21d9c654d14fc38d566c74b1125d41)**: Discover how Usher's personhood verification process works, ensuring the uniqueness and security of each user.
+- [Introduction to Usher](https://www.loom.com/share/de9f9b50f25041e98f2d634accd5eacd): Get acquainted with Usher, its purpose, and its unique benefits to the world of Web3.
+- [Starting a Campaign](https://www.loom.com/share/d6e631a5528b488384086f520224732d): Learn how to create and launch a campaign on the Usher platform, step by step.
+- [Personhood Verification](https://www.loom.com/share/5b21d9c654d14fc38d566c74b1125d41): Discover how Usher's personhood verification process works, ensuring the uniqueness and security of each user.
+- [Creating and Managing Referral Links](https://www.loom.com/share/6006286e90a64e649122666bbd8dddc1): Master the process of creating referral links, managing wallet connections, and understanding the data collection process for partners on the Usher platform.
+- [Partner Performance Statistics](https://www.loom.com/share/42d2f49f7f814b39b90b6c93b6fbaec3): Gain insights into key performance metrics, such as link hits, pending conversions, and rewards, to monitor and optimize your success as a partner on the Usher platform.
+- [Understanding Reward Types](https://www.loom.com/share/ba4d3e4134464e32a53938fa8e979ec5): Learn about the different reward types available on the Usher platform, including ERC20 compatible tokens and NFTs, and their compatibility requirements.
+
 
 ## GitHub Repositories
 
@@ -27,10 +31,10 @@ Explore our Github repositories to find valuable resources for developers, inclu
 
 For those who prefer to learn through reading, we offer a variety of written resources:
 
-- **[Usher Blog](https://www.usher.so/blog/)**: Our blog features in-depth articles, updates, and insights about the Usher platform, its features, real-world use cases, and other articles important to this ecosystem.
+- [Usher Blog](https://www.usher.so/blog/): Our blog features in-depth articles, updates, and insights about the Usher platform, its features, real-world use cases, and other articles important to this ecosystem.
 ## Official Websites
 
-- **[Usher Main Website](https://www.usher.so/)**: The official website for the Usher platform, featuring essential information about the project.
+- [Usher Main Website](https://www.usher.so/): The official website for the Usher platform, featuring essential information about the project.
 
 ## Upcoming Resources
 

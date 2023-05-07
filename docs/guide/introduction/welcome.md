@@ -1,6 +1,7 @@
 ---
 title: "Welcome to Usher Docs"
 sidebar_position: 1
+slug: /
 ---
 
 # Discover Usher: An Open Source Partner Network Platform
