@@ -8,7 +8,7 @@ sidebar_position: 2
 
 Partnerships play a vital role in driving brand growth and success. This section highlights the benefits of partner-driven performance-based marketing and shares best practices to help you get the most out of your collaborations.
 
-## Types of Partners
+## Partner Types
 
 Three types of partners can be distinguished to help you understand how each type can support your brand:
 
@@ -26,7 +26,7 @@ In contrast, business-facing services benefit from providing higher rewards per 
 
 Adjusting the reward strategy based on your target audience and specific use case is crucial. Furthermore, don't hesitate to explore creative avenues in Web3 development to create innovative partner programs. By leveraging cutting-edge technology and experimenting with novel approaches, you can maximize your campaign's potential and foster valuable collaborations.
 
-## Tips for a Successful Partner Program
+## Success Tips
 
 To establish successful collaborations with Usher, follow these guidelines:
 
