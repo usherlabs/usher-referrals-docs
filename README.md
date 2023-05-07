@@ -1,10 +1,10 @@
 # 📖 Welcome to Usher Documentation repository
 
-This is the home of Usher docs! Here, we aim to help our users make the best of it, so they may {what usher will help users achieve}.
+Welcome to the Usher documentation repository! Here, our goal is to help our users unleash the full potential of Usher, allowing them to effectively manage and grow their partner networks, streamline referral programs, and seamlessly integrate Usher into their Web2 and Web3 projects.
 
-{some link to usher original repository, explaining what you'll find there and not here}
+For more information about the Usher project, its source code, and technical details, please visit the **[Usher Organization Profile](https://github.com/usherlabs)**. You will find the Usher Core, Usher.js, and Usher Programs components repositories, along with instructions on how to set up and deploy your instance of Usher.
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a static website generator.
+This website is built using **[Docusaurus 2](https://docusaurus.io/)**, a modern static website generator designed to make it easy for developers to create and maintain documentation sites.
 
 # Get started
 
@@ -105,7 +105,7 @@ This command generates static content into the **`build`** directory and can be 
 
 ## Documentation deployment guidelines
 
-{Insert docs deployment guidelines here; i.e.: how to deploy with vercel}
+[//]: # (TODO: how to deploy must be added)
 
 e.g.:
 
@@ -125,8 +125,8 @@ For more information on Vercel deployments, consult the [official Vercel documen
 
 We welcome contributions to improve and expand the documentation for {project-name}. Here's how you can contribute:
 
-1. **Report issues**: If you find any errors, inconsistencies, or areas that need improvement, please open an issue on the [GitHub repository](https://github.com/usherlabs/usher/issues). Provide a clear description of the issue and suggest a possible solution or improvement.
-2. **Suggest enhancements**: If you have ideas for new sections, topics, or content that would be helpful to others, please share your suggestions by opening an issue on the [GitHub repository](https://github.com/usherlabs/usher/issues).
+1. **Report issues**: If you find any errors, inconsistencies, or areas that need improvement, please open an issue on the [GitHub main repository](https://github.com/usherlabs/usher/issues). Provide a clear description of the issue and suggest a possible solution or improvement.
+2. **Suggest enhancements**: If you have ideas for new sections, topics, or content that would be helpful to others, please share your suggestions by opening an issue on the [GitHub main repository](https://github.com/usherlabs/usher/issues).
 3. **Submit a pull request**: If you'd like to contribute directly by fixing an issue or adding new content, please fork the repository, make changes, and submit a pull request. Ensure your changes follow the documentation guidelines and best practices outlined in the README.
 
-**Note**: If you want to contribute to Usher source code itself, please visit the [Usher repository](https://github.com/usherlabs/usher) and follow the contribution guidelines.
+**Note**: If you want to contribute to Usher source code itself, please visit the [Usher main repository](https://github.com/usherlabs/usher) and follow the contribution guidelines.
