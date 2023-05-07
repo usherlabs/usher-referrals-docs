@@ -11,10 +11,10 @@ Welcome to the Usher community, where our shared passion unites us for revolutio
 
 To foster engagement and collaboration, we've established various platforms for you to connect with other Usher enthusiasts and stay informed about the latest developments:
 
-- **[Discord](https://go.usher.so/discord)**: Engage in real-time discussions, networking, and support with the Usher community.
-- **[Twitter](https://twitter.com/usher_web3)**: Stay updated on Usher news and join conversations surrounding the broader Web3 space.
-- **[GitHub](https://github.com/usherlabs)**: Collaborate and contribute to Usher projects through our GitHub repositories.
-- **[LinkedIn](https://www.linkedin.com/company/usherlabs/)**: Expand your professional network and receive company updates on our LinkedIn page.
+- [Discord](https://go.usher.so/discord): Engage in real-time discussions, networking, and support with the Usher community.
+- [Twitter](https://twitter.com/usher_web3): Stay updated on Usher news and join conversations surrounding the broader Web3 space.
+- [GitHub](https://github.com/usherlabs): Collaborate and contribute to Usher projects through our GitHub repositories.
+- [LinkedIn](https://www.linkedin.com/company/usherlabs/): Expand your professional network and receive company updates on our LinkedIn page.
 
 Choose the platforms that resonate with your interests and needs, and start connecting with the Usher community today.
 

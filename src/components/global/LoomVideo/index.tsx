@@ -12,10 +12,6 @@ const LoomVideo = (props: Props) => {
 	const { src, hideOwner, hideTitle, hideShare, hideEmbed } = props;
 
 	const optionsMapping = {
-		// hideOwner: "hide_owner",
-		// hideTitle: "hide_title",
-		// hideShare: "hide_share",
-		// hideEmbed: "hideEmbedTopBar"
 		"hide_owner": hideOwner,
 		"hide_title": hideTitle,
 		"hide_share": hideShare,
