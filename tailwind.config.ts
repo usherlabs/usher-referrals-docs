@@ -23,10 +23,10 @@ const colors = {
 	...generateColorShades("secondary", "#a461d8"),
 	...generateColorShades("emphasis", "#c24943"),
 
-	...generateColorShades("warning", "#f6c343"),
-	...generateColorShades("info", "#3296f3"),
-	...generateColorShades("success", "#22c55e"),
-	...generateColorShades("danger", "#d23c3c"),
+	...generateColorShades("warning", "#e8b830"),
+	...generateColorShades("info", "#3b9df3"),
+	...generateColorShades("success", "#28b863"),
+	...generateColorShades("danger", "#d94141"),
 
 	// it's more beautiful not to go full black, opacity makes it blend to the background to look even better
 	black: withOpacity(blackRGB, 0.85),
@@ -339,20 +339,28 @@ export default {
 function generateColorShades(colorName, baseColor) {
 	const color = chroma(baseColor);
 
-	// Create a color scale based on the base color
-	const colorScaleToBlack = chroma.scale([baseColor, "#000"]).mode("lab");
-	const colorScaleToWhite = chroma.scale([baseColor, "#fff"]).mode("lab");
+	const bezierSteps = 5;
+
+	const colorScaleToBlack = chroma
+		.bezier([baseColor, "#000"])
+		.scale()
+		.mode("lab")
+		.colors(bezierSteps);
+	const colorScaleToWhite = chroma
+		.bezier([baseColor, "#fff"])
+		.scale()
+		.mode("lab")
+		.colors(bezierSteps);
 
 	return {
-		[`${colorName}-lightest`]: colorScaleToWhite(0.9).hex(),
-		[`${colorName}-lighter`]: colorScaleToWhite(0.7).hex(),
-		[`${colorName}-light`]: colorScaleToWhite(0.3).hex(),
+		[`${colorName}-lightest`]: colorScaleToWhite[4],
+		[`${colorName}-lighter`]: colorScaleToWhite[3],
+		[`${colorName}-light`]: colorScaleToWhite[2],
 		[`${colorName}`]: baseColor,
-		[`${colorName}-dark`]: colorScaleToBlack(0.3).hex(),
-		[`${colorName}-darker`]: colorScaleToBlack(0.6).hex(),
-		[`${colorName}-darkest`]: colorScaleToBlack(0.85).hex()
-	};
-}
+		[`${colorName}-dark`]: colorScaleToBlack[2],
+		[`${colorName}-darker`]: colorScaleToBlack[3],
+		[`${colorName}-darkest`]: colorScaleToBlack[4],
+	};}
 
 function withOpacity(color, opacity) {
 	return `rgba(${color}, ${opacity})`;
