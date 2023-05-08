@@ -45,6 +45,7 @@
 	"devDependencies": {
 		"@docusaurus/module-type-aliases": "2.4.0",
 		"@docusaurus/types": "2.4.0",
+		"@types/mdx": "",
 		"@tsconfig/docusaurus": "^1.0.5",
 		"typescript": "^5.0.4",
 		"prettier": "^2.5.1",

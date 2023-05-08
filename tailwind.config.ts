@@ -17,16 +17,16 @@ const colors = {
 	 *
 	 *  Changing here is the easiest. If you need to fine tune specific component colors you may need to modify:
 	 *  - src/styles/colors.scss
-	 *  - specific components styles at their own files
+	 *  - specific ecosystem styles at their own files
 	 */
 	...generateColorShades("primary", "#0077ff"),
-	...generateColorShades("secondary", "#fac900"),
+	...generateColorShades("secondary", "#bfa1ff"),
 	...generateColorShades("emphasis", "#c24943"),
 
-	...generateColorShades("warning", "#f6c343"),
-	...generateColorShades("info", "#3296f3"),
-	...generateColorShades("success", "#22c55e"),
-	...generateColorShades("danger", "#d23c3c"),
+	...generateColorShades("warning", "#e8b830"),
+	...generateColorShades("info", "#3b9df3"),
+	...generateColorShades("success", "#28b863"),
+	...generateColorShades("danger", "#d94141"),
 
 	// it's more beautiful not to go full black, opacity makes it blend to the background to look even better
 	black: withOpacity(blackRGB, 0.85),
@@ -75,7 +75,7 @@ export default {
 	corePlugins: {
 		preflight: false
 	},
-	content: ["./src/**/*.{js,jsx,ts,tsx}", "../docs/**/*.mdx"], // my markdown stuff is in ../docs, not /src
+	content: ["./src/**/*.{js,jsx,ts,tsx}", "./docs/**/*.mdx"], // my markdown stuff is in ../docs, not /src
 	darkMode: ["class", '[data-theme="dark"]'], // hooks into docusaurus' dark mode settigns
 
 	plugins: [],
@@ -339,20 +339,28 @@ export default {
 function generateColorShades(colorName, baseColor) {
 	const color = chroma(baseColor);
 
-	// Create a color scale based on the base color
-	const colorScaleToBlack = chroma.scale([baseColor, "#000"]).mode("lab");
-	const colorScaleToWhite = chroma.scale([baseColor, "#fff"]).mode("lab");
+	const bezierSteps = 6;
+
+	const colorScaleToBlack = chroma
+		.bezier([baseColor, "#000"])
+		.scale()
+		.correctLightness()
+		.mode("lab")
+	const colorScaleToWhite = chroma
+		.bezier([baseColor, "#fff"])
+		.scale()
+		.correctLightness()
+		.mode("lab")
 
 	return {
 		[`${colorName}-lightest`]: colorScaleToWhite(0.9).hex(),
-		[`${colorName}-lighter`]: colorScaleToWhite(0.7).hex(),
+		[`${colorName}-lighter`]: colorScaleToWhite(0.5).hex(),
 		[`${colorName}-light`]: colorScaleToWhite(0.3).hex(),
 		[`${colorName}`]: baseColor,
 		[`${colorName}-dark`]: colorScaleToBlack(0.3).hex(),
-		[`${colorName}-darker`]: colorScaleToBlack(0.6).hex(),
-		[`${colorName}-darkest`]: colorScaleToBlack(0.85).hex()
-	};
-}
+		[`${colorName}-darker`]: colorScaleToBlack(0.5).hex(),
+		[`${colorName}-darkest`]: colorScaleToBlack(0.8).hex(),
+	};}
 
 function withOpacity(color, opacity) {
 	return `rgba(${color}, ${opacity})`;
