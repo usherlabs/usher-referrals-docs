@@ -7,11 +7,11 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-	title: "My Usher Site", // INITIAL TODO
-	tagline: "My project will solve this the best way possible.", // INITIAL TODO
-	favicon: "img/favicon.ico", // INITIAL TODO don't forget to change your favicon for this project, if needed
+	title: "Usher Docs",
+	tagline: "Helping people advertise and grow their Web3 brand with partnerships",
+	favicon: "img/favicon.ico",
 
-	url: "https://docs.usher.so", // INITIAL TODO
+	url: "https://docs.usher.so",
 	// Set the /<baseUrl>/ pathname under which your site is served
 	// For GitHub pages deployment, it is often '/<projectName>/'
 	baseUrl: "/",
@@ -19,7 +19,7 @@ const config = {
 	// GitHub pages deployment config.
 	// If you aren't using GitHub pages, you don't need these.
 	organizationName: "usher",
-	projectName: "usher", // INITIAL TODO Usually your repo name.
+	projectName: "usher",
 
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "warn",
@@ -44,7 +44,7 @@ const config = {
 				// Please change this to your repo.
 				// Remove this to remove the "edit this page" links.
 				editUrl:
-					"https://github.com/usherlabs/some-usher-project/tree/main/packages/create-docusaurus/templates/shared/" // INITIAL TODO
+					"https://github.com/usherlabs/usher-docs/tree/main/"
 			}
 		],
 		// This plugin enables tailwind
@@ -91,8 +91,8 @@ const config = {
 				hideOnScroll: true,
 				logo: {
 					alt: "Site Logo", // no need to change, it's the default for accessibility reasons
-					src: "logos/UsherLearnLogomark.svg", // INITIAL TODO
-					srcDark: "logos/UsherLearnLogomark_drk.svg", // INITIAL TODO
+					src: "logos/UsherLearnLogomark.svg",
+					srcDark: "logos/UsherLearnLogomark_drk.svg",
 					target: "_self",
 					href: "/"
 				},
@@ -160,7 +160,7 @@ const config = {
 						icon: {
 							alt: "github logo",
 							src: `/logos/github.svg`,
-							href: "https://github.com/usherlabs/[thisProject]", // INITIAL TODO
+							href: "https://github.com/usherlabs/", // INITIAL TODO
 							target: "_blank"
 						}
 					},
