@@ -7,6 +7,10 @@ sidebar_position: 4
 Instantiating the UsherJS library provides a JavaScript object that responds to a few methods. These allow you to manage
 referral tokens and execute on conversions.
 
+:::tip
+To get more details on object and method types, you can refer to the [**documentation we have generated**](https://ts-docs.js.usher.so/) for our API and properties.
+:::
+
 ### `usher.convert(conversion)`
 
 To submit a conversion, you must provide parameters that identify the Campaign you are creating a conversion for, as
@@ -56,8 +60,6 @@ This can be useful if your conversion tracking process involves more long-formed
 | Object Property Name/Key | Type                            | Description                 |
 | ------------------------ | ------------------------------- | --------------------------- |
 | campaignReference        | `{ id: string, chain: string }` | A reference to the Campaign |
-
-[See the CampaignReference Type](https://ts-docs.js.usher.so/types/types.campaignreference)
 
 ### `usher.anchor(anchorSelector, campaignReference)`
 
