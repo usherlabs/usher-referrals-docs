@@ -20,7 +20,7 @@ const colors = {
 	 *  - specific ecosystem styles at their own files
 	 */
 	...generateColorShades("primary", "#0077ff"),
-	...generateColorShades("secondary", "#a461d8"),
+	...generateColorShades("secondary", "#bfa1ff"),
 	...generateColorShades("emphasis", "#c24943"),
 
 	...generateColorShades("warning", "#e8b830"),
@@ -344,22 +344,22 @@ function generateColorShades(colorName, baseColor) {
 	const colorScaleToBlack = chroma
 		.bezier([baseColor, "#000"])
 		.scale()
+		.correctLightness()
 		.mode("lab")
-		.colors(bezierSteps);
 	const colorScaleToWhite = chroma
 		.bezier([baseColor, "#fff"])
 		.scale()
+		.correctLightness()
 		.mode("lab")
-		.colors(bezierSteps);
 
 	return {
-		[`${colorName}-lightest`]: colorScaleToWhite[4],
-		[`${colorName}-lighter`]: colorScaleToWhite[3],
-		[`${colorName}-light`]: colorScaleToWhite[2],
+		[`${colorName}-lightest`]: colorScaleToWhite(0.9).hex(),
+		[`${colorName}-lighter`]: colorScaleToWhite(0.5).hex(),
+		[`${colorName}-light`]: colorScaleToWhite(0.3).hex(),
 		[`${colorName}`]: baseColor,
-		[`${colorName}-dark`]: colorScaleToBlack[2],
-		[`${colorName}-darker`]: colorScaleToBlack[3],
-		[`${colorName}-darkest`]: colorScaleToBlack[4],
+		[`${colorName}-dark`]: colorScaleToBlack(0.3).hex(),
+		[`${colorName}-darker`]: colorScaleToBlack(0.5).hex(),
+		[`${colorName}-darkest`]: colorScaleToBlack(0.8).hex(),
 	};}
 
 function withOpacity(color, opacity) {
