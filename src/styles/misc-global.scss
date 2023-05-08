@@ -20,7 +20,7 @@ html[data-theme="light"] {
 	--ifm-link-color: theme("colors.primary");
 	--ifm-link-hover-color: theme("colors.primary-light");
 
-	--ifm-background-surface-color: theme("colors.secondary-lightest");
+	--ifm-background-surface-color: theme("colors.primary-lightest");
 
 	--ifm-navbar-background-color: var(--token-primary-bg-c);
 	--ifm-navbar-shadow: 0 1px 0 0 theme("colors.black-6");
@@ -39,7 +39,7 @@ html[data-theme='dark'] {
   --ifm-link-color: theme('colors.primary-light');
   --ifm-link-hover-color: theme('colors.primary');
 
-  --ifm-background-surface-color: theme('colors.secondary-darker');
+  --ifm-background-surface-color: theme('colors.primary-darker');
 
   --ifm-navbar-background-color: var(--token-primary-bg-c);
   --ifm-navbar-shadow: 0 1px 0 0 theme('colors.white-5');
