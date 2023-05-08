@@ -4,32 +4,74 @@ sidebar_position: 2
 
 # Installation
 
-To start submitting tracking referrals & and submitting conversions to Usher, simply copy and paste the snippet below before the end of the Body tag.&#x20;
-
-```html
-<script src="https://cdn.jsdelivr.net/npm/@usher.so/js"></script>
-```
-
 :::tip
 When installing UsherJS on your Web App or dApp, **it is highly recommended to load UsherJS on every page**. This way, no matter where the Campaign redirects your Referred Users, UsherJS is installed to parse the current URL immediately.
 :::
 
-If you are producing a JS bundle using Webpack, or some alternative bundler, you can install the JS library directly into your application:
+### Using with `<script>`
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/@usher.so/js"></script>
+<script>
+	(function () {
+		function convert() {
+			console.log("Usher loves Arweave!");
+			const usher = window.Usher();
+			usher.convert({
+				id: "QOttOj5CmOJnzBHrqaCLImXJ9RwHVbMDY0QPEmcWptQ",
+				chain: "arweave",
+				eventId: 0,
+				metadata: {
+					amount: 100
+				}
+			});
+		}
+		if (typeof window.Usher === "undefined") {
+			window.UsherLoaders = window.UsherLoaders || [];
+			window.UsherLoaders.push(convert);
+		} else {
+			convert();
+		}
+	})();
+</script>
+<!-- UsherJS can even be loaded here with the use of window.UsherLoaders -->
+```
+:::note
+`window.UsherLoaders` can be used to register a function that will execute when UsherJS loads onto the page.
+:::
+
+
+### Using as an NPM Package
+
+1. Install the package
 
 ```shell
-// npm
+# npm
 npm i @usher.so/js
 
-// yarn
+# yarn
 yarn add @usher.so/js
 ```
 
-The library can then be imported like so:
+2. Import the package into your project and you're good to go (with typescript compatibility)
 
 ```javascript
-import { Usher } from '@usher.so/js'
+import { Usher } from "@usher.so/js";
 
 const usher = Usher();
-usher.parse() // parses the current website URL and saves the referral token to browser storage
+(async () => {
+	const conversion = await usher.convert({
+		id: "ida4Pebl2uULdI_rN8waEw65mVH9uIFTY1JyeZt1PBM",
+		chain: "arweave",
+		eventId: 0,
+		commit: 10,
+		// nativeId: "user_wallet_address",
+		metadata: {
+			hello: "world",
+			key: "value"
+		}
+	});
 
+	console.log("Conversion Result: ", conversion);
+})();
 ```
