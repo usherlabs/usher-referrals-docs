@@ -4,7 +4,7 @@ Welcome to the Usher documentation repository! Here, our goal is to help our use
 allowing them to effectively manage and grow their partner networks, streamline referral programs, and seamlessly
 integrate Usher into their Web2 and Web3 projects.
 
-For more information about the Usher project, its source code, and technical details, please visit the \* \*[Usher Organization Profile](https://github.com/usherlabs)\*\*. You will find the Usher Core, Usher.js, and Usher
+For more information about the Usher project, its source code, and technical details, please visit the [Usher Organization Profile](https://github.com/usherlabs). You will find the Usher Core, Usher.js, and Usher
 Programs components repositories, along with instructions on how to set up and deploy your instance of Usher.
 
 This website is built using **[Docusaurus 2](https://docusaurus.io/)**, a modern static website generator designed to
