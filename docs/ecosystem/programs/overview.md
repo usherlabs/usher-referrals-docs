@@ -32,5 +32,5 @@ Embed and manage campaigns and partnerships on any Usher Core instance through U
 
 ### Getting Started and Resources
 
-Visit the [Usher Program's GitHub repository](https://github.com/usherlabs/programs) for comprehensive documentation
+Visit the ``[Usher Program's GitHub repository](https://github.com/usherlabs/programs) for comprehensive documentation
 on setting up and using the platform
