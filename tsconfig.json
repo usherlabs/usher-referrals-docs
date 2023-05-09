@@ -3,13 +3,14 @@
   "extends": "@tsconfig/docusaurus/tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
+    "resolveJsonModule": true,
     "paths": {
       "@site": [
         "."
       ],
       "@site/*": [
         "./*"
-      ],
+      ]
     }
   }
 }

@@ -5,10 +5,21 @@ const path = require("path");
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
+/**
+ * Used to redirect from old docs to new docs
+ */
+const {
+	getRedirectsFromMapping
+} = require("./config-utils/redirect/get-redirects-from-map");
+const redirects = getRedirectsFromMapping(
+	require("./config-utils/redirect/old-to-new-routes.json")
+);
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 	title: "Usher Docs",
-	tagline: "Helping people advertise and grow their Web3 brand with partnerships",
+	tagline:
+		"Helping people advertise and grow their Web3 brand with partnerships",
 	favicon: "img/favicon.ico",
 
 	url: "https://docs.usher.so",
@@ -43,8 +54,7 @@ const config = {
 				sidebarPath: require.resolve("./sidebars.js"),
 				// Please change this to your repo.
 				// Remove this to remove the "edit this page" links.
-				editUrl:
-					"https://github.com/usherlabs/usher-docs/tree/main/"
+				editUrl: "https://github.com/usherlabs/usher-docs/tree/main/"
 			}
 		],
 		// This plugin enables tailwind
@@ -58,8 +68,16 @@ const config = {
 					return postcssOptions;
 				}
 			};
-		}
+		},
+		[
+			// This plugin is deactivated on devlopment, only runs on production
+			"@docusaurus/plugin-client-redirects",
+			{
+				redirects: redirects
+			}
+		]
 	],
+
 	// algolia: { // INITIAL TODO to activate algolia search. Fill according to your needs
 	//     appId: '',
 	//     apiKey: '',
