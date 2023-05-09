@@ -138,7 +138,8 @@ const config = {
 						type: "custom-cta",
 						position: "right",
 						label: "Register your interest",
-						href: "https://pages.usher.so/register-interest"
+						target: "_blank",
+						href: "https://www.usher.so/brands/register-interest"
 					},
 					{
 						type: "custom-separator",
