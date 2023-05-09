@@ -75,8 +75,17 @@ const config = {
 			{
 				redirects: redirects
 			}
-		]
-	],
+		],
+		process.env.GTAG_TRACKING_ID
+			? [
+					"@docusaurus/plugin-google-gtag",
+					{
+						trackingID: process.env.GTAG_TRACKING_ID,
+						anonymizeIP: true
+					}
+			  ]
+			: false
+	].filter((p) => p !== false),
 
 	// algolia: { // INITIAL TODO to activate algolia search. Fill according to your needs
 	//     appId: '',
