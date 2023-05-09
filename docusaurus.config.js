@@ -84,8 +84,8 @@ const config = {
 						anonymizeIP: true
 					}
 			  ]
-			: false
-	].filter((p) => p !== false),
+			: ""
+	].filter((p) => p !== ""),
 
 	// algolia: { // INITIAL TODO to activate algolia search. Fill according to your needs
 	//     appId: '',
