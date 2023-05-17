@@ -25,9 +25,9 @@ import TabItem from "@theme/TabItem";
 import LoomVideo from "@site/src/components/global/LoomVideo";
 
 <Tabs>
-<TabItem value={"object"} default label={"Object"}>
+<TabItem value={"web-object"} default label={"Web Tracking Example"}>
 
-```json title='Campaign object JSON'
+```json title='Campaign object JSON - Web Tracking example'
 {
 	"id": "ida4Pebl2uULdI_rN8waEw65mVH9uIFTY1JyeZt1PBM",
 	"chain": "arweave",
@@ -65,6 +65,57 @@ import LoomVideo from "@site/src/components/global/LoomVideo";
 	"disable_verification": false,
 	"unlisted": false,
 	"whitelist": null
+}
+```
+
+</TabItem>
+<TabItem value={"sc-object"} default label={"Smart Contract Tracking Example"}>
+
+```json title='Campaign object JSON - Smart Contract Example'
+{
+    "id": "0x7982bEDc1D35CDc08Dd3572c0a4cc225D55a4447",
+    "chain": "ethereum",
+    "events": [
+        {
+            "strategy": "flat",
+            "rate": 0.1,
+            "description": "Task Created",
+            "contract_address": "0xabBA944b417D1E1310a673eC410d03B02B7557F6",
+            "contract_event": "TaskCreated(uint256,string,bool)"
+        },
+        {
+            "strategy": "flat",
+            "rate": 0.2,
+            "description": "Task Toggled",
+            "contract_address": "0xabBA944b417D1E1310a673eC410d03B02B7557F6",
+            "contract_event": "TaskToggled(uint256,bool)"
+        }
+    ],
+    "reward": {
+        "name": "ChainLink",
+        "ticker": "LINK",
+        "type": "erc20",
+        "limit": 10,
+        "address": "0x326C977E6efc84E512bB9C30f76E30c160eD06FB"
+    },
+    "conflict_strategy": "PASSTHROUGH",
+    "disable_verification": true,
+    "details": {
+        "destination_url": "https://victorshevtsov.github.io/brand-app/",
+        "name": "Usher ❤️ Ethereum Reseller Program",
+        "description": "Refer Web3 Brands building & growing on the Ethereum Blockchain to Usher and earn up to 50% commission when Rewards are claimed from their Campaigns."
+    },
+    "advertiser": {
+        "name": "Usher",
+        "icon": "https://pages.usher.so/wp-content/uploads/2022/03/usher-logo-medium.png",
+        "description": "Partnerships for Web3",
+        "external_link": "https://usher.so",
+        "twitter": "https://twitter.com/usher_web3"
+    },
+    "_internal": {
+        "address": "0x7982bEDc1D35CDc08Dd3572c0a4cc225D55a4447",
+        "key": "........"
+    }
 }
 ```
 
@@ -127,7 +178,7 @@ When setting up a campaign, consider the following:
 
 - Choose the right reward structure: Determine your campaign's most suitable reward type, rate, and limit based on your
   objectives.
-- Set up conversion events: Define the events that trigger rewards, such as registrations or staking.
+- Set up conversion events: Define the events that trigger rewards, such as registrations or staking, leveraging Smart Contract or Web-based events.
 - Define campaign limits: Establish limits for rewards and conversions to manage your budget effectively.
 - Customize campaign details and brand/advertiser profile: Provide information like names, descriptions, images, and
   external links to make your campaign stand out.
