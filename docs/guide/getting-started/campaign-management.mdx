@@ -20,6 +20,7 @@ Before diving into campaign creation, it's essential to understand the Campaign 
 campaign terms, mutable campaign details, and the brand/advertiser profile. Immutable terms define the core structure of
 your campaign, while mutable details and profiles allow for customization and flexibility.
 
+
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 import LoomVideo from "@site/src/components/global/LoomVideo";
@@ -29,42 +30,42 @@ import LoomVideo from "@site/src/components/global/LoomVideo";
 
 ```json title='Campaign object JSON - Web Tracking example'
 {
-	"id": "ida4Pebl2uULdI_rN8waEw65mVH9uIFTY1JyeZt1PBM",
-	"chain": "arweave",
-	"owner": "ksFTLgrwQGtNrhRz6MWyd3a4lvK1Oh-QF1HYcEeeFVk",
-	"events": [
-		{
-			"strategy": "flat",
-			"rate": 0.1,
-			"nativeLimit": 250000,
-			"perCommit": 1,
-			"description": "files are uploaded"
-		}
-	],
-	"reward": {
-		"name": "Arweave",
-		"ticker": "AR",
-		"type": "token",
-		"limit": 3000
-	},
-	"conflict_strategy": "PASSTHROUGH",
-	"details": {
-		"destination_url": "https://app.ardrive.io/#/sign-in?ref=usher",
-		"name": "ArDrive Referral Program",
-		"description": "Refer users to ArDrive and earn when files are uploaded.",
-		"image": "https://ardrive.io/wp-content/uploads/2021/07/Gallery-Angle-PS3000-scaled.jpg",
-		"external_link": "https://ardrive.io/"
-	},
-	"advertiser": {
-		"name": "ArDrive",
-		"icon": "https://ardrive.io/wp-content/uploads/2021/06/AD-LOGO-PS1600-210x79.png",
-		"description": "Upload files forever!",
-		"external_link": "https://ardrive.io/",
-		"twitter": "https://twitter.com/ardriveapp"
-	},
-	"disable_verification": false,
-	"unlisted": false,
-	"whitelist": null
+  "id": "ida4Pebl2uULdI_rN8waEw65mVH9uIFTY1JyeZt1PBM",
+  "chain": "arweave",
+  "owner": "ksFTLgrwQGtNrhRz6MWyd3a4lvK1Oh-QF1HYcEeeFVk",
+  "events": [
+    {
+      "strategy": "flat",
+      "rate": 0.1,
+      "nativeLimit": 250000,
+      "perCommit": 1,
+      "description": "files are uploaded"
+    }
+  ],
+  "reward": {
+    "name": "Arweave",
+    "ticker": "AR",
+    "type": "token",
+    "limit": 3000
+  },
+  "conflict_strategy": "PASSTHROUGH",
+  "details": {
+    "destination_url": "https://app.ardrive.io/#/sign-in?ref=usher",
+    "name": "ArDrive Referral Program",
+    "description": "Refer users to ArDrive and earn when files are uploaded.",
+    "image": "https://ardrive.io/wp-content/uploads/2021/07/Gallery-Angle-PS3000-scaled.jpg",
+    "external_link": "https://ardrive.io/"
+  },
+  "advertiser": {
+    "name": "ArDrive",
+    "icon": "https://ardrive.io/wp-content/uploads/2021/06/AD-LOGO-PS1600-210x79.png",
+    "description": "Upload files forever!",
+    "external_link": "https://ardrive.io/",
+    "twitter": "https://twitter.com/ardriveapp"
+  },
+  "disable_verification": false,
+  "unlisted": false,
+  "whitelist": null
 }
 ```
 
@@ -73,88 +74,55 @@ import LoomVideo from "@site/src/components/global/LoomVideo";
 
 ```json title='Campaign object JSON - Smart Contract Example'
 {
-    "id": "0x7982bEDc1D35CDc08Dd3572c0a4cc225D55a4447",
-    "chain": "ethereum",
-    "events": [
-        {
-            "strategy": "flat",
-            "rate": 0.1,
-            "description": "Task Created",
-            "contract_address": "0xabBA944b417D1E1310a673eC410d03B02B7557F6",
-            "contract_event": "TaskCreated(uint256,string,bool)"
-        },
-        {
-            "strategy": "flat",
-            "rate": 0.2,
-            "description": "Task Toggled",
-            "contract_address": "0xabBA944b417D1E1310a673eC410d03B02B7557F6",
-            "contract_event": "TaskToggled(uint256,bool)"
-        }
-    ],
-    "reward": {
-        "name": "ChainLink",
-        "ticker": "LINK",
-        "type": "erc20",
-        "limit": 10,
-        "address": "0x326C977E6efc84E512bB9C30f76E30c160eD06FB"
+  "id": "0x7982bEDc1D35CDc08Dd3572c0a4cc225D55a4447",
+  "chain": "ethereum",
+  "events": [
+    {
+      "strategy": "flat",
+      "rate": 0.1,
+      "description": "Task Created",
+      "contract_address": "0xabBA944b417D1E1310a673eC410d03B02B7557F6",
+      "contract_event": "TaskCreated(uint256,string,bool)"
     },
-    "conflict_strategy": "PASSTHROUGH",
-    "disable_verification": true,
-    "details": {
-        "destination_url": "https://victorshevtsov.github.io/brand-app/",
-        "name": "Usher ❤️ Ethereum Reseller Program",
-        "description": "Refer Web3 Brands building & growing on the Ethereum Blockchain to Usher and earn up to 50% commission when Rewards are claimed from their Campaigns."
-    },
-    "advertiser": {
-        "name": "Usher",
-        "icon": "https://pages.usher.so/wp-content/uploads/2022/03/usher-logo-medium.png",
-        "description": "Partnerships for Web3",
-        "external_link": "https://usher.so",
-        "twitter": "https://twitter.com/usher_web3"
-    },
-    "_internal": {
-        "address": "0x7982bEDc1D35CDc08Dd3572c0a4cc225D55a4447",
-        "key": "........"
+    {
+      "strategy": "flat",
+      "rate": 0.2,
+      "description": "Task Toggled",
+      "contract_address": "0xabBA944b417D1E1310a673eC410d03B02B7557F6",
+      "contract_event": "TaskToggled(uint256,bool)"
     }
+  ],
+  "reward": {
+    "name": "ChainLink",
+    "ticker": "LINK",
+    "type": "erc20",
+    "limit": 10,
+    "address": "0x326C977E6efc84E512bB9C30f76E30c160eD06FB"
+  },
+  "conflict_strategy": "PASSTHROUGH",
+  "disable_verification": true,
+  "details": {
+    "destination_url": "https://victorshevtsov.github.io/brand-app/",
+    "name": "Usher ❤️ Ethereum Reseller Program",
+    "description": "Refer Web3 Brands building & growing on the Ethereum Blockchain to Usher and earn up to 50% commission when Rewards are claimed from their Campaigns."
+  },
+  "advertiser": {
+    "name": "Usher",
+    "icon": "https://pages.usher.so/wp-content/uploads/2022/03/usher-logo-medium.png",
+    "description": "Partnerships for Web3",
+    "external_link": "https://usher.so",
+    "twitter": "https://twitter.com/usher_web3"
+  },
+  "_internal": {
+    "address": "0x7982bEDc1D35CDc08Dd3572c0a4cc225D55a4447",
+    "key": "........"
+  }
 }
 ```
-
-</TabItem>
-<TabItem value={'props'} label={"Properties"}>
-
-| Object Property Name/Key | Type     | Description                                                                                                                                                                                                                                                                                                                                                   | Required |
-| ------------------------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| id                       | string   | The identifier of the Campaign. This can be an ID within a Smart Contract or an Blockchain Transaction Address, depending on the chain                                                                                                                                                                                                                        | true     |
-| chain                    | string   | The blockchain identifer. ie. arweave , ethereum, polygon                                                                                                                                                                                                                                                                                                     | true     |
-| owner                    | string   | The Wallet Address of the Brand/Advertiser                                                                                                                                                                                                                                                                                                                    | false    |
-| events                   | array    | An array of Conversion Events. These Events represent points throughout the Referred User journey at which Conversions are Tracked                                                                                                                                                                                                                            | false    |
-| events[].strategy        | string   | flat or percentage reward strategy for the event                                                                                                                                                                                                                                                                                                              | false    |
-| events[].rate            | float    | Reward rate for the event. For the flat strategy, this rate is flat amount of tokens rewarded to partners.For the percentage strategy, this rate is a multiplier, multiplied by the metadata.amount submitted in the Conversion Parameter                                                                                                                     | false    |
-| events[].nativeLimit     | integer  | An arbitrary value that limits the conversions that can be processed for this given event for the referred/native user.Where a Conversion.nativeId is provided, rather than restricting conversions to 1 per referred/native user, the Referred User can continue triggering conversions until the sum of all Conversion.commit values meets this nativeLimit | false    |
-| events[].perCommit       | integer  | If no reward perCommit is defined, the behaviour is standard (ie. X reward rate per Conversion).Otherwise, the reward amount can be relative to the Conversion.commit value, such that reward = rate \* (commit / perCommit)                                                                                                                                  | false    |
-| events[].description     | string   | A description for when the event will trigger.The word "when" is prepended to this description in the Usher Partner App UI                                                                                                                                                                                                                                    | false    |
-| http://reward.name/      | string   | The name of the rewarded http://token.ie/. "Ether", "Arweave", "My Cool NFT"                                                                                                                                                                                                                                                                                  | false    |
-| reward.ticker            | string   | The ticker for the rewarded http://token.ie/. "ETH", "AR", "MYCNFT"                                                                                                                                                                                                                                                                                           | false    |
-| reward.type              | string   | The type of the token rewared to Partners.This is an enumerator with values: token, nft, or pst                                                                                                                                                                                                                                                               | false    |
-| reward.limit             | integer  | A limit on the rewards for the entire campaign. When the amount of claimed rewards reaches this limit, the Campaign is considered complete.                                                                                                                                                                                                                   | false    |
-| conflict_strategy        | string   | PASSTHROUGH or OVERWRITEDetermines how the referral should behave when two Partners refer the same user prior to a tracked conversion.PASSTHROUGH is default, and ensures that the first Invite Link used takes precedence.OVERWRITE is optional and ensures that the last Invite Link used takes precedence.                                                 | false    |
-| details.destination_url  | string   | The URL that Campaign Partners will redirect users to.                                                                                                                                                                                                                                                                                                        | false    |
-| http://details.name/     | string   | Name for the Campaign to be recognisable by Partners                                                                                                                                                                                                                                                                                                          | false    |
-| details.description      | string   | A description for the Campaign detailing when and how users are converted once the destination_url is reached                                                                                                                                                                                                                                                 | false    |
-| details.image            | string   | A hosted image URL to further enhance recognisability of the Campaign                                                                                                                                                                                                                                                                                         | false    |
-| details.external_link    | string   | A URL Partners can visit to receive more information about the Campaign. Can be a landing page promoting the partnership program                                                                                                                                                                                                                              | false    |
-| http://advertiser.name/  | string   | Name of the Advertiser                                                                                                                                                                                                                                                                                                                                        | false    |
-| advertiser.icon          | string   | A hosted image URL of the Advertiser's Brand Icon                                                                                                                                                                                                                                                                                                             | false    |
-| advertiser.description   | string   | A description of the Advertiser and their related services or propositions                                                                                                                                                                                                                                                                                    | false    |
-| advertiser.external_link | string   | A URL that Partners can visit to learn more about the Advertiser                                                                                                                                                                                                                                                                                              | false    |
-| advertiser.twitter       | string   | A Twitter URL that Partners can visit to learn more and get updates from the Advertiser                                                                                                                                                                                                                                                                       | false    |
-| disable_verification     | boolean  | If true, Personhood Verification will NOT be required for Partners to start referring users and earning rewards.Personhood Verification is generally recommended to be active for Campaigns.Learn more on whether your Campaign should include this security measure.                                                                                         | false    |
-| unlisted                 | boolean  | Determines whether the Campaign will show on the Usher Explore Page.Partnership Programs that wish to remain private, and/or include a Whitelist of Partners can opt to set this to true                                                                                                                                                                      | false    |
-| whitelist.partners       | string[] | An array of Partner http://identifiers.by/ default, Campaigns will not include the Whitelist feature.                                                                                                                                                                                                                                                         | false    |
-| whitelist.external_link  | string   | A URL where a Form or other form of data collection is hosted. Partners can use this URL to submit their application to participate in the Partner program.                                                                                                                                                                                                   | false    |
-
 </TabItem>
 </Tabs>
+
+To understand all the properties that can be configured within a campaign, please refer to our dedicated page on [The Campaign Properties](./campaign-properties).
 
 ### Campaign Creation Options
 
