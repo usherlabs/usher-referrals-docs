@@ -7,7 +7,7 @@ slug: /
 # Discover Usher: An Open Source Partner Network Platform
 
 :::info
-We’re sunsetting operations for Usher Referrals, however, the project’s source code is available on GitHub for you to explore and deploy for your own Web3 referral marketing requirements.
+Usher Labs has sunset operations for Usher Referrals, however, the project’s source code is available on GitHub for you to explore and deploy for your own Web3 referral marketing requirements.
 :::
 
 Welcome to Usher Docs, the hub for Usher—a revolutionary partnership management platform designed to facilitate your very own community-driven partner network. Streamline collaboration, performance tracking, and reward distribution, to fuel your brand's growth.
