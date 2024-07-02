@@ -22,15 +22,16 @@ const config = {
 		"Helping people advertise and grow their Web3 brand with partnerships",
 	favicon: "img/favicon.ico",
 
-	url: "https://docs.usher.so",
+	url: "https://usherlabs.github.io",
 	// Set the /<baseUrl>/ pathname under which your site is served
 	// For GitHub pages deployment, it is often '/<projectName>/'
-	baseUrl: "/",
+	baseUrl: "/usher-referrals/",
 
 	// GitHub pages deployment config.
 	// If you aren't using GitHub pages, you don't need these.
-	organizationName: "usher",
-	projectName: "usher",
+	organizationName: "usherlabs",
+	projectName: "usher-referrals",
+	trailingSlash: false,
 
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "warn",
